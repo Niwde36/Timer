@@ -1,0 +1,111 @@
+:root{
+    --bg-color: rgb(0, 10, 7);
+    --bg-color-button : rgb(192, 255, 150);
+    --border-color : rgb(115, 230, 21);
+
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 63%;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Play', sans-serif;
+    color: goldenrod;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header{
+
+
+    top: 0; 
+    width: auto;    
+
+}
+
+
+.header--list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px;
+}
+
+.header--button{
+    
+    width: 120px;
+    height: 30px;
+    background-color: var(--bg-color-button);
+    border: 2px solid var(--border-color);
+    border-radius: 0px 0px 45px 45px;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    
+}
+
+main{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(33%);
+}
+
+.hero{
+    text-align: center;
+    width: 100%;
+
+}
+
+.hero--title{
+    font-size: 5.1rem;
+    margin-top: -200px;
+    margin-bottom: 36px;
+}
+
+
+.hero--inputs input{
+    /* appearance: none; */
+    font-size: 3rem;
+    color: var(--bg-color);
+    width: 70px;
+    margin: 0px 3px;
+    border-radius: 0px 30px 0px 30px;
+    text-align: center;
+    margin: 18px;
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+.hero--buttons button{
+    padding: 6px 12px;
+    margin: 33px 12px 0px 12px;
+    border-radius: 12px;
+    background-color: var(--bg-color-button);
+    border-color: var(--border-color);
+}
+
+.hero--time{
+    font-size: 3rem;
+}
+
+.hero--time #time span{
+    font-size: 8rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./src/timer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <script src="http://kit.fontawesome.com/1db2702c51.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="header--nav">
+            <ul class="header--list">
+                <li>
+                    <a href="./index.html"><button class="button header--button" id="temporizer-button" title="Temporizer"><i class="fa-solid fa-clock"></i></button></a>
+                </li>
+                <li>
+                    <button class="button header--button" id="timer-button" title="Timer"><i class="fa-solid fa-hourglass"></i></button>
+                </li>
+                <li>
+                    <button class="button header--button" title="Alarms"><i class="fa-solid fa-bell"></i></button>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="principal">
+            <h1 class="hero--title">Timer</h1>
+
+            <div class="hero--inputs">
+                <form>
+                    <input class="inpiut--hours" type="number" name="hours" id="hoursInput" placeholder="00" min="0" max="99" value="00">h:
+                    <input class="input--minutes" type="number" name="minutes" id="minutesInput" placeholder="00" min="0" max="59" value="00">m:
+                    <input class="inpiut--seconds" type="number" name="seconds" id="secondsInput" placeholder="00" min="0" max="59" value="00">
+                    
+            
+                </form>
+            </div>
+            
+            
+    
+            <div class="hero--time">
+                <p id="time"><span id="hours">00</span>h:<span id="minutes">00</span>m:<span id="seconds">00</span>s</p>
+            </div>
+
+            <div class="hero--buttons">
+                <button onclick="setValue()">START</button>
+                <button onclick="stopChronometer()" class="button hero--button" type="button">STOP</button>
+                <a href="./timer.html"><button class="button hero--button" type="button">RESET</button></a>
+
+            </div>
+
+
+        </section>
+    </main>
+    <script src="./src/timer.js"></script>
+    
+</body>
+</html>
