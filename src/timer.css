@@ -46,7 +46,7 @@ header{
 .header--button{
     
     width: 120px;
-    height: 30px;
+    height: 40px;
     background-color: var(--bg-color-button);
     border: 2px solid var(--border-color);
     border-radius: 0px 0px 45px 45px;
