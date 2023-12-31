@@ -43,6 +43,10 @@ header{
     padding: 15px;
 }
 
+.header--list img{
+    height: 20px;
+}
+
 .header--button{
     
     width: 120px;
